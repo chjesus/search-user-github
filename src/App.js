@@ -27,7 +27,7 @@ function App() {
     const allUserArray = JSON.parse(allUsersStorage);
     setAllUsers(allUserArray);
     setReloadUser(false);
-  }, [realoadUser]);
+  }, [realoadUser, messageNotification]);
 
   useEffect(() => {
     if (messageNotification === "error") error();
@@ -35,6 +35,7 @@ function App() {
     else if (messageNotification === "already") already();
     else if (messageNotification === "empty") empty();
     setMessage("");
+    // setReloadUser(true);
   }, [messageNotification]);
 
   const deleteUser = (index) => {
