@@ -1,0 +1,19 @@
+.list {
+  margin: 0 50px;
+
+  &-not-found {
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+    font-size: 35px;
+  }
+}
+
+.gutter-row {
+  margin-bottom: 5px;
+}
+
+.gutter-box {
+  padding: 8px 0;
+  background: #00a0e9;
+}

@@ -1,0 +1,28 @@
+.search {
+  padding: 5px 0px;
+
+  &-input {
+    background-color: transparent;
+    color: white;
+    outline: none !important;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid white;
+    border-radius: 0;
+    font-size: 25px;
+
+    input {
+      background-color: transparent;
+      color: white;
+      font-size: inherit;
+    }
+
+    .ant-input-search-icon {
+      color: white;
+
+      &::before {
+        border: 0;
+      }
+    }
+  }
+}
